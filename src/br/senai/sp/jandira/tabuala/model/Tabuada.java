@@ -21,11 +21,11 @@ public class Tabuada {
         System.out.println("Qual o valor final do mutiplicando?");
         multiplicando = leitor.nextInt();
 
-        calculatTabuada();
+        calcularTabuada();
 
     }
 
-    public void calculatTabuada() {
+    public String[] calcularTabuada() {
 
         int apoio = 0;
         if (multiplicandoFinal < multiplicandoInicial) {
@@ -45,7 +45,10 @@ public class Tabuada {
 
 
         }
-        exibirTabuada();
+
+        //exibirTabuada();
+        return tabuada;
+
 
 
     }
